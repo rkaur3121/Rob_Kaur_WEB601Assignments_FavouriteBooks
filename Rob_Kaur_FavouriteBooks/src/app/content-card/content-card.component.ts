@@ -1,10 +1,49 @@
 import { Component } from '@angular/core';
-
+import { ContentList } from '../helper-files/content-list';
 @Component({
   selector: 'app-content-card',
   templateUrl: './content-card.component.html',
   styleUrls: ['./content-card.component.scss']
 })
 export class ContentCardComponent {
+  contentList: ContentList;
 
+  constructor() {
+    this.contentList = new ContentList();
+
+    const content1 = {
+      id: 1,
+      title: 'To Kill a Mockingbird',
+      description: 'A Classic coming-of-age story that explores themes of racial injustice and morality',
+      creator: 'Harper lee',
+      imgURL: 'assests/to kill a kingbird.jpg',
+      type: 'Fiction',
+      tags: ['Coming-of-age,Racism, Social issues']
+    };
+
+    const content2 = {
+      id: 2,
+      title: 'The Great Gatsby',
+      description: 'Set in the Roaring Twenties, this novel depicts the glamorous and decadent lives of wealthy individuals and the emptiness that lies beneath the surface',
+      creator: 'F.Scott Fitzgerald',
+      imgURL: 'assets/The_Great_Gatsby_Cover.jpg',
+      type: 'Fiction',
+      tags: ['Jazz age, Wealth']
+    };
+
+    const content3 = {
+      id: 3,
+      title: 'The_Great_Gatsby_Cover.jpg',
+      description: 'A classic romance novel featuring the spirited Elizabeth bennet and her tumultuous relationship with the enigmatic Mr-Darcy in 19th-century England',
+      creator: 'Jane Austen',
+      imgURL: 'pride&prejudice.jpg',
+      type: 'Fiction',
+      tags: ['Romance, Social Class, Satire']
+    };
+
+    this.contentList.addContent(content1);
+    this.contentList.addContent(content2);
+    this.contentList.addContent(content3);
+
+  }
 }
