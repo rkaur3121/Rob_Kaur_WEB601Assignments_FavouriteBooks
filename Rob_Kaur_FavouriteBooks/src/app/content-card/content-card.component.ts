@@ -17,8 +17,8 @@ export class ContentCardComponent {
       description: 'A Classic coming-of-age story that explores themes of racial injustice and morality',
       creator: 'Harper lee',
       imgURL: 'assets/image/mockingbird.jpg',
-      type: 'Fiction',
-      tags: ['Coming-of-age,Racism, Social issues']
+      type: 'Fiction'
+    
     };
 
     const content2 = {
@@ -27,8 +27,8 @@ export class ContentCardComponent {
       description: 'Set in the Roaring Twenties, this novel depicts the glamorous and decadent lives of wealthy individuals and the emptiness that lies beneath the surface',
       creator: 'F.Scott Fitzgerald',
       imgURL: 'assets/image/great.jpg',
-      type: 'Fiction',
-      tags: ['Jazz age, Wealth']
+      type: 'Fiction'
+      
     };
 
     const content3 = {
@@ -37,8 +37,8 @@ export class ContentCardComponent {
       description: 'A classic romance novel featuring the spirited Elizabeth bennet and her tumultuous relationship with the enigmatic Mr-Darcy in 19th-century England',
       creator: 'Jane Austen',
       imgURL: 'assets/image/image4.jpg',
-      type: 'Fiction',
-      tags: ['Romance, Social Class, Satire']
+      type: 'Fiction'
+      
     };
 
     this.contentList.addContent(content1);
